@@ -1,0 +1,13 @@
+<view bindtap='changeNavi1' class='navigator' url='../info/info' hover-class='tabNavi'>
+  <view>
+    <image class='cho_img' src='{{naviSrc_img1}}'></image>
+  </view>
+  <text class='cho_text'>发布信息</text>  
+</view>
+
+<view bindtap='changeNavi2' class='navigator' url='../info/info' hover-class='tabNavi'>
+  <view>
+    <image class='cho_img' src='{{naviSrc_img2}}'></image>
+  </view>
+  <text class='cho_text'>选择信息</text>  
+</view>

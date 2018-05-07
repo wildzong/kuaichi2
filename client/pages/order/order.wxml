@@ -1,0 +1,39 @@
+<view class='order_view'>
+  <view class='page-header'>
+    <text class='page-header-text'>{{title}}</text>
+  </view>
+
+  <view>
+    <view class='view2'>
+      <text class='header-text'>进行中</text>
+      <scroll-view class='page-body' scroll-y="true">
+        <navigator url='../detail/detail' wx:for="{{data}}">
+          <view class='item' wx:if='{{item.state == "ing"}}'>
+            <image class='poster' src="{{item.src}}"></image>
+            <view class='meta'>
+              <text class='title'>{{item.name}}</text>
+              <text class='sub-title'>出发：{{item.start}}</text>
+              <text class='sub-title'>目的地：{{item.destination}}</text>
+            </view>
+            <view class='rating'><text>赏金：{{item.price}}</text></view>
+          </view>
+        </navigator>
+     </scroll-view> 
+
+     <text class='header-text'>已完成</text>
+      <scroll-view class='page-body' scroll-y="true">
+        <navigator url='../detail/detail' wx:for="{{data}}">
+          <view class='item' wx:if='{{item.state == "done"}}'>
+            <image class='poster' src="{{item.src}}"></image>
+            <view class='meta'>
+              <text class='title'>{{item.name}}</text>
+              <text class='sub-title'>出发：{{item.start}}</text>
+              <text class='sub-title'>目的地：{{item.destination}}</text>
+            </view>
+            <view class='rating'><text>赏金：{{item.price}}</text></view>
+          </view>
+        </navigator>
+     </scroll-view> 
+    </view>
+  </view>
+</view>

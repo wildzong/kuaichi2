@@ -1,0 +1,42 @@
+<view hidden='{{hiden}}'>
+  <modal title='确认地址' cancel-text='重置' bindconfirm='address_confirm' bindcancel='address_reset'>
+    {{address_now}}
+  </modal>
+</view>
+<view class='all_view'>
+
+  <view class='view_form'>
+    <form>
+        <view class='view1'>
+          <input class='input_start' placeholder='请输入出发地址' name='start_place' bindfocus='start_place_input' value='{{address_now}}'></input>
+          <button class='button_start' size='mini' bindtap='getLocalAddress'>当前位置</button>
+        </view>
+      
+      <form>
+        <view class='view1'>
+          <input class='input_start' placeholder='请输入目的地' name='end_place' bindfocus='end_place_input' value='{{address_end}}'></input>
+          <button class='button_start' size='mini' bindtap='endPlace_reset'>重置地址</button>
+        </view>
+      </form>
+
+      <view class='view2'>
+        <button class='button' form-type='submit'>确认</button>
+        <button class='button' form-type='reset'>重置</button>
+      </view>
+    </form>
+  </view>
+
+  <view class='view3'>
+    <map id="map" longitude="113.324520" latitude="23.099994" scale="14"  show-location style="width: 100%; height: 100vh;"></map>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+

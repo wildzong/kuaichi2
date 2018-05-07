@@ -1,0 +1,20 @@
+<view class='all-view'>
+  <view class='view-pic'>
+    <image class='wallet-pic' src='../../images/18.png'></image>
+    <view class='view-text'>
+      <text class='wallet-text'>我的余额</text>
+    </view>
+    <view class='view-text2'>
+    <text class='wallet-text2'>￥{{money}}</text>
+    </view>
+  </view>
+  
+  <view class='view-button'>
+    <button class='button-recharge'>
+      <text class='button-text' hover-class='opacity:0.4'>充值</text>
+    </button>
+    <button class='button-withdraw'>
+      <text class='button-text'>提现</text>
+    </button>
+  </view>
+</view>

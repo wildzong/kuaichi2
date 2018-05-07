@@ -1,0 +1,20 @@
+<view class='view-all'>
+  
+  <view class='view-part' wx:for='{{address_list}}'>
+    
+    <view class='view-name-phone'>
+      <text class='name'>{{item.name}}</text>
+      <text class='phone'>{{item.phone}}</text>
+    </view>
+    <view class='view-address'>
+      <text>{{item.address}}</text>
+    </view>
+    
+    <view class='view-switch'> 
+      <switch type='checkbox' checked='{{item.checked}}'></switch>设为默认
+      <button size='mini'>删除</button>
+    </view>
+
+  </view>
+
+</view>

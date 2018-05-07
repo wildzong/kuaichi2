@@ -1,0 +1,65 @@
+/* pages/money/money.wxss */
+.all-view{
+  display: flex;
+  flex-direction: column;
+}
+
+.view-pic{
+  width: 100%;
+  height: 500rpx;
+  padding-top: 120rpx;
+  align-items: center;
+  padding-left: 275rpx;
+  border-bottom: 1rpx solid white;
+}
+
+.wallet-pic{
+  width: 230rpx;
+  height: 230rpx;
+}
+
+.view-text{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+  padding-left: 25rpx;
+}
+.view-text2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rpx;
+}
+
+.wallet-text{
+  font-size: 18px;
+}
+.wallet-text2{
+  font-size: 36px;
+}
+
+.view-button{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.button-recharge{
+  width: 670rpx;
+  height: 100rpx;
+  background-color:	#00BB00;
+  margin-top: 30rpx;
+  color: white;
+  font-size: 30px;
+  line-height: 82rpx;
+}
+.button-withdraw{
+  width: 670rpx;
+  height: 100rpx;
+  background-color: white;
+  margin-top: 30rpx;
+  border: 2rpx solid grey;
+  font-size: 30px;
+  line-height: 82rpx;
+}
+.button-text{ 
+  vertical-align: middle;
+}

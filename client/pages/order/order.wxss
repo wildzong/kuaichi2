@@ -1,0 +1,33 @@
+/* pages/order/order.wxss */
+order_view{
+  display: flex;
+  flex-direction: column;
+}
+
+.view2{
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text{
+  width: 100%;
+  color: #ccc;
+  font-size: 30rpx;
+  border-bottom: 3rpx solid #ccc;
+  padding: 20rpx 20rpx;
+}
+
+.page-header{
+  display:flex;
+  /*横向居中对齐*/
+  width: 100%;
+  justify-content:center;
+  border-bottom: 5rpx solid #ccc;
+  margin-bottom: 10rpx;
+}
+
+.page-header-text{
+  padding: 20rpx 40rpx;
+  color: #999;
+  font-size:40rpx;
+}

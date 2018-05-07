@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/choice/choice",
+    "pages/order/order",
+    "pages/profile/profile",
+    "pages/info/info",
+    "pages/person/person",
+    "pages/detail/detail",
+    "pages/money/money",
+    "pages/address/address",
+    "pages/judgement/judgement",
+    "pages/introduction/introduction",
+    "pages/opinion/opinion",
+    "pages/search_place/search_place",
+    "pages/search_place2/search_place2"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "KuaiChi",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "red",
+    "list": [
+      {
+        "pagePath": "pages/choice/choice",
+        "text": "首页",
+        "iconPath": "/images/1.png",
+        "selectedIconPath": "/images/2.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "/images/3.png",
+        "selectedIconPath": "/images/4.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "/images/5.png",
+        "selectedIconPath": "/images/6.png"
+      }
+    ]
+  }
+}

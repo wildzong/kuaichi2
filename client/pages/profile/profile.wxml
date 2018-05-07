@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+  <view class='wallet' bindtap='bindMoney'>
+    <icon type='success' size='35'></icon>
+    <text class='wallet-text'>钱包</text>
+  </view>
+
+  <view class='wallet2' bindtap='bindAddress'>
+    <icon type='success' size='35'></icon>
+    <text class='wallet-text'>地址管理</text>
+  </view>
+
+  <view class='wallet2' bindtap='bindJudge'>
+    <icon type='success' size='35'></icon>
+    <text class='wallet-text'>我的评价</text>
+  </view>
+
+  <view class='wallet2'>
+    <icon type='success' size='35'></icon>
+    <text class='wallet-text'>代金券</text>
+  </view>
+
+  <view class='wallet3' bindtap='bindIntro'>
+    <icon type='success' size='35'></icon>
+    <text class='wallet-text'>关于我们</text>
+  </view>
+
+  <view class='wallet2' bindtap='bindOpinion'>
+    <icon type='success' size='35'></icon>
+    <text class='wallet-text'>反馈与意见</text>
+  </view>
+</view>
+
